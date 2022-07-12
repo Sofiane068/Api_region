@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Ou habitez vous ? </h1>
+    </header>
+    <section>
+        <form action="">
+            <label for="region">Région :</label>
+            <select name="region" id="reg" onchange="getCommune(this.value)" >
+                <option value="" selected>séléctionnez votre région</option>
+            </select>
+            <label for="commune" id="labelCom">Commune :</label>
+            <div class="loader" id="load"></div>
+            <select name="commune" id="com">
+
+            </select>
+        </form>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
